@@ -1,0 +1,54 @@
+V1.15Kb Keyboard Commands:
+
+To enable keyboard commands set "keyboard" in "Set/Paddle" menu.
+
+Depressing any key but Esc will display "Esc -> keyboard" for 2 second.
+
+To start a keyboard command depress Esc ( "Kcmd> (h-help)" will be displayed ).
+
+followed by depressing:
+
+c - Enter keyboard CW mode ( use Esc to exit this mode ):
+    Must be in CW or CWR mode.
+d - band down ( repeats cycle by hitting 'd', exit by pressing any key but 'd' )
+f - new frequency ( must enter full frequency i.e. 14060000 )
+l - lock ( toggles )
+m - mode ( repeats cycle by hitting 'm', exit by pressing any key but 'm' )
+r - RIT ( toggles )
+s - SPLT ( toggles )
+t - CW Tone ( 100 - 2000 )
+u - band up (  repeats cycle by hitting 'u', exit by pressing any key but 'u'  )
+v - VFO ( toggles )
+w - CW speed ( 5 - 50 )
+h - Help will cycle through the valid commands each 2 seconds.
+    To exit "h" press any key.
+
+=================================================================================
+
+Hardware:
+
+Reference URL:
+
+https://www.pjrc.com/teensy/td_libs_PS2Keyboard.html
+http://www.w0eb.com/TSW%20Teensy%204.0%20to%20Raduino%20Adapter_V3.2Construction.pdf
+
+
+Where:
+
++5 Volts:  P1-1
+
+ground:    P1-2 or 5
+
+data:      P1-4  (A8)
+
+clock:     P1-3  (A9)
+
+
+               data       X        X
+
+           ground     X               X  +5 volts
+                  
+               clock      X        X
+
+                           -------
+
